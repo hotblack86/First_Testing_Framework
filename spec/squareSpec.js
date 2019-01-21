@@ -28,14 +28,8 @@ describe('area', () => {
   })
 })
 
-// describe('constructor', () => {
-//   it('only accepts numbers', () => {
-//     throwAnError(new Square("r"), new Error("argument is not a number"))
-//   })
-// })
-
 describe('constructor', () => {
   it('only accepts numbers', () => {
-     checkError(new Square("r"));
+     checkError(function() { new Square("r"); });
   })
 })
